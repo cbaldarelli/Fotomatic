@@ -3,8 +3,17 @@
 html {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
+  color: #4a4a4a;
 }
 
+a {
+  text-decoration: none;
+  color: #4a4a4a;
+}
+
+ul {
+  list-style: none;
+}
 .main-content {
   position: relative;
   top: 5.3125rem; /* To offset for fixed header. */
