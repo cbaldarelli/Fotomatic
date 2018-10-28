@@ -25,9 +25,6 @@ html {
   max-width: 100%;
 }
 
-/*body {
-  width: 100%;
-}*/
 .main-content {
   position: relative;
   top: 5.3125rem; /* To offset for fixed header. */
@@ -313,6 +310,7 @@ header .mobile {
   font-size: 2.25rem;
   font-weight: bold;
   color: white;
+  opacity: 100%;
 }
 
 #filters-section .content h3 {
@@ -323,6 +321,7 @@ header .mobile {
 }
 
 #filters-section .images-container {
+  display: flex;
   max-width: 100%;
   padding: 0 1%;
 }
