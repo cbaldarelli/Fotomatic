@@ -29,13 +29,13 @@ html {
   position: relative;
   top: 5.3125rem; /* To offset for fixed header. */
 }
-/*
+
 @media only screen and (max-width: 760px) {
   .main-content {
     top: 2.5625rem;
   }
 }
-*/
+
 
 /* Header */
 
@@ -84,17 +84,27 @@ header .icon {
 header .mobile {
   display: none;
 }
-/*
+
 @media only screen and (max-width: 760px) {
   header .desktop {
     display: none;
   }
 
   header .mobile {
-    display: block;
+    display: flex;
+    justify-content: center;
     width: 100%;
   }
+  header .logo {
+    display: none;
+  }
 
+  header .navigation {
+    width: 100%;
+  }
+  header {
+    height: auto;
+  }
   header .content {
     padding: .5rem 0;
   }
@@ -117,7 +127,7 @@ header .mobile {
     color: white;
   }
 }
-*/
+
 /* Sign Up Section */
 
 #sign-up-section {
