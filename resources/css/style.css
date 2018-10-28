@@ -6,6 +6,21 @@ html {
   color: #4a4a4a;
 }
 
+/* Header */
+
+header {
+  position: fixed;
+  z-index: 10;
+  height: 85px;
+}
+
+header .content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.875rem;
+  line-height: 1.6;
+}
 a {
   text-decoration: none;
   color: #4a4a4a;
@@ -14,11 +29,31 @@ a {
 ul {
   list-style: none;
 }
+
+/* MAIN CONTENT */
+
 .main-content {
   position: relative;
   top: 5.3125rem; /* To offset for fixed header. */
 }
 
+/* Banner */
+
+#sign-up-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    background-image: url('../images/banner-landingpage.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 43.5rem;
+}
+
+#sign-up-cta {
+  display: flex;
+  align-content: center;
+}
 .center {
   text-align: center;
 }
