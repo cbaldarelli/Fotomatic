@@ -6,54 +6,6 @@ html {
   color: #4a4a4a;
 }
 
-/* Header */
-
-header {
-  position: fixed;
-  z-index: 10;
-  height: 85px;
-}
-
-header .content {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 1.875rem;
-  line-height: 1.6;
-}
-a {
-  text-decoration: none;
-  color: #4a4a4a;
-}
-
-ul {
-  list-style: none;
-}
-
-/* MAIN CONTENT */
-
-.main-content {
-  position: relative;
-  top: 5.3125rem; /* To offset for fixed header. */
-}
-
-/* Banner */
-
-#sign-up-section {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-    background-image: url('../images/banner-landingpage.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 43.5rem;
-}
-
-#sign-up-cta {
-  display: flex;
-  align-content: center;
-}
 .center {
   text-align: center;
 }
@@ -72,17 +24,28 @@ ul {
   display: block;
 }
 
+body {
+  width: 100%;
+}
+.main-content {
+  position: relative;
+  top: 5.3125rem; /* To offset for fixed header. */
+}
+/*
 @media only screen and (max-width: 760px) {
   .main-content {
     top: 2.5625rem;
   }
 }
+*/
 
 /* Header */
 
 header {
   position: fixed;
-  width: 100%;
+  width: 100%; /*figure out why nav is so far to the right*/
+  z-index: 10;
+  height: 5.3125rem;
   border-bottom: solid 1px #c6c1c1;
   background-color: white;
 }
@@ -90,11 +53,13 @@ header {
 header .content {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   padding: 1.875rem;
+  line-height: 1.6;
 }
 
 header .logo {
-  flex: 1;
+  flex: 1; /* ??? */
 }
 
 header nav ul {
@@ -110,6 +75,7 @@ nav a {
   line-height: 1.6;
   font-size: 1rem;
   color: #4a4a4a;
+  text-decoration: none;
 }
 
 header .icon {
@@ -120,7 +86,7 @@ header .icon {
 header .mobile {
   display: none;
 }
-
+/*
 @media only screen and (max-width: 760px) {
   header .desktop {
     display: none;
@@ -153,7 +119,7 @@ header .mobile {
     color: white;
   }
 }
-
+*/
 /* Sign Up Section */
 
 #sign-up-section {
@@ -161,6 +127,9 @@ header .mobile {
   justify-content: flex-start;
   align-items: flex-start;
   height: 43.5rem;
+  background-image: url('../images/banner-landingpage.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 #sign-up-cta {
@@ -168,6 +137,9 @@ header .mobile {
   border: solid 1px #979797;
   border-radius: 4px;
   background-color: #9dc20b;
+  position: relative;
+  top: 10.625rem;
+  left: 10%;
 }
 
 #sign-up-cta .content {
@@ -204,7 +176,7 @@ header .mobile {
   margin-top: 1.625rem;
   padding: 1.25rem 7.25rem;
 }
-
+/*
 @media only screen and (max-width: 760px) {
   #sign-up-section {
     align-items: center;
@@ -250,7 +222,7 @@ header .mobile {
     font-size: 2rem;
   }
 }
-
+*/
 /* Features Section */
 
 #features-section {
@@ -286,7 +258,7 @@ header .mobile {
   font-weight: 300;
   color: #4a4a4a;
 }
-
+/*
 @media only screen and (max-width: 890px) {
   .feature h2 {
     font-size: 1.125rem;
@@ -311,7 +283,7 @@ header .mobile {
     padding: 1.25rem 1rem 0 1rem;
   }
 }
-
+*/
 /* Filters Section */
 
 #filters-section {
@@ -341,7 +313,7 @@ header .mobile {
   max-width: 100%;
   padding: 0 1%;
 }
-
+/*
 @media only screen and (max-width: 760px) {
   #filters-section {
     padding: 1.5rem 0 0 0;
@@ -371,18 +343,18 @@ header .mobile {
     display: none;
   }
 }
-
+*/
 /* Quotes Section */
 
 #quotes-section {
   background-color: #f3f3f3;
 }
 
-#quotes-section content {
+#quotes-section .content {
   padding: 5rem 0;
 }
 
-#quotes-section quote {
+#quotes-section .quote {
   padding-right: 1.875rem;
   font-family: "Palatino", serif;
   font-size: 1.875rem;
@@ -391,10 +363,10 @@ header .mobile {
   color: #4a4a4a;
 }
 
-#quotes-section quote-citation {
+#quotes-section .quote-citation {
   height: 1.875rem;
 }
-
+/*
 @media only screen and (max-width: 760px) {
   #quotes-section content {
     padding: 1.875rem .625rem;
@@ -411,7 +383,7 @@ header .mobile {
     margin: auto;
   }
 }
-
+*/
 /* Footer */
 
 footer {
@@ -428,9 +400,10 @@ footer .content {
 footer .copyright {
   flex-grow: 1;
 }
-
+/*
 @media only screen and (min-width: 760px) {
   footer .content {
     font-size: .625rem;
   }
 }
+*/
